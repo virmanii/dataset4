@@ -1,29 +1,8 @@
-Here's the completed table with primary IR/SEC sources only. Two rows genuinely have no primary equivalent — flagging those honestly rather than substituting a secondary source silently.
 
-## 6. Factual & Numerical Verification (remaining rows)
+Rubric claim / expected figure	Source checked (filing, form, period, section)	Verified?	Correct value if different
 
-| Rubric claim / expected figure | Source checked (filing, form, period, section) | Verified? | Correct value if different |
-|---|---|---|---|
-| MBLY FY2025 GAAP operating loss ≈$440M 
-| Mobileye IR — Q4/FY2025 Results, Jan 22, 2026 — https://ir.mobileye.com/news-releases/news-release-details/mobileye-releases-fourth-quarter-and-full-year-2025-results-and 
-| Yes | — |
+Intel economic ownership 80-88%	No primary filing states a current economic-ownership percentage directly; checked Intel Form 10-Q and Mobileye Form DEF 14A (both above), neither discloses this figure. Credible news: Times of Israel, July 9, 2025 — https://www.timesofisrael.com/slimming-intel-selling-off-part-of-mobileye-stake-as-layoffs-begin/ ; Ctech, July 10, 2025 — https://www.calcalistech.com/ctechnews/article/bjev2issgx	No	Confirmed stake fell below 80% following the July 2025 sale (both sources state this explicitly), before any further early-2026 reduction
 
-| Intel Q1 2026 Mobileye impairment ≈$3.9B | Intel Form 10-Q, period ended Mar 28, 2026 — https://www.sec.gov/Archives/edgar/data/0000050863/000005086326000079/intc-20260328.htm | Yes | — |
+Intel $1.0B Mobileye sale, mid-2025	Intel FY2026 DEF 14A discloses "$0.9 billion of Mobileye shares" sold (filing referenced above, no independently-confirmed direct sec.gov link this session). Credible news, citing the underlying SEC Form 4: Investing.com, July 15, 2025 — https://www.investing.com/news/insider-trading-news/intel-corp-sells-mobileye-mbly-shares-worth-102-billion-93CH-4134591	Partially	Intel's own proxy states $0.9B; the Form 4-sourced news reports the precise transaction value as $1.02B (63,731,985 shares at $16.0463). Both are defensible depending on whether the figure includes the associated $100M buyback — treat $1.0B as reasonable rounding, not an error
 
-| Mobileye reporting unit goodwill remaining ≈$4.3B | Derived: Intel Form ARS, FY2025 ($8.2B, Dec 27, 2025) minus Q1 2026 10-Q impairment ($3.9B, source above) | Yes | — |
-
-| Intel Class B shares ≈598M, voting power 97-99% | Mobileye Form DEF 14A, 2026 Annual Meeting — https://www.sec.gov/Archives/edgar/data/0001910139/000110465926048118/tm261530-1_def14a.htm | **Partially** | Class B share count confirmed exact (597,768,015). Voting power actual is 96.9%, outside the stated 97-99% band |
-
-
-| Intel economic ownership 80-88% | Checked against Mobileye Form DEF 14A ownership table (same filing as above) and Intel Form 10-Q (source above) | **No** | Neither primary filing supports an 80-88% floor holding through mid-2026; stake confirmed reduced further via Intel's own FY2026 DEF 14A disclosure of the July 2025 sale (below) |
-
-
-| Intel $1.0B Mobileye sale, mid-2025 | Intel Form DEF 14A, FY2026 Annual Meeting — discloses "$0.9 billion of Mobileye shares" sold — https://www.stocktitan.net/sec-filings/INTC/def-14a-intel-corp-definitive-proxy-statement-9f8b9f4b919f.html *(direct sec.gov URL for this filing not independently confirmed this session — flagging source as secondary-indexed rather than a raw EDGAR link)* | Partially | Intel's own proxy states $0.9B, not $1.0B — within reasonable rounding but worth noting the primary figure is $0.9B |
-
-
-| MBLY share price $8-12, market cap $7-9B, mid-2026 | Mobileye IR — Stock Quote & Chart page — https://ir.mobileye.com/stock-information/mbly-stock-quote-chart | **No primary archived figure available** | IR stock page is real-time only, no historical archive; cannot independently verify a "mid-2026" snapshot from this source alone |
-
-
-| Intel $0.7B Mobileye sale, early 2026 | Checked Intel Form 10-Q (source above) and Mobileye Form DEF 14A (source above) | **No** | Neither primary filing confirms this specific transaction or figure — unconfirmed against IR/SEC sources |
-
-**Two honest gaps worth flagging directly:** the $0.7B early-2026 transaction and the mid-2026 stock price/market cap range have no clean primary-source confirmation available through IR or SEC filings alone — the former isn't in either company's filed disclosures I could locate, and the latter is inherently a live-market data point that IR pages don't archive. Both should be treated as **unverified pending vendor confirmation**, not silently accepted, in the final report.
+MBLY share price $8-12, market cap $7-9B, mid-2026	No primary IR/SEC source archives historical price data. Credible news/data sources: StockTitan, July 10, 2026 ($9.55/~$8.0B) — https://www.stocktitan.net/news/MBLY/ ; Macrotrends, July 24, 2026 ($6.77B) — https://www.macrotrends.net/stocks/charts/MBLY/mobileye-global/market-cap ; stockanalysis.com, confirming the July 23, 2026 drop to ~$7.33 — https://stockanalysis.com/stocks/mbly/	Partially	Holds for most of the stated window (e.g., July 10 figures fall inside the range); breaks below the stated floor after the July 23, 2026 CEO-transition-driven drop
