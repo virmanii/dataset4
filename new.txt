@@ -81,3 +81,35 @@ Rewrite #7 (value-vs-book-tension) to credit either defensible conclusion — "c
 Rewrite #11 (strategic-fit-assessment) to credit either defensible conclusion on strategic fit, given Mobileye's real robotaxi pivot provides a legitimate counter-argument to the "weakens" framing.
 Remove #16 (penalty-impairment-confusion) or explicitly exclude responses already scored under #7/#8 from also triggering it.
 
+
+Conclusion: The negatives alone do not prevent a good answer from scoring well — #16/#17's stacking risk is real but avoidable by a correct answer. The larger problem is now on the positive side: 38 of 100 points are either factually wrong as written or lock one of several defensible conclusions/evidence sets, and another 20 points carry an explicit date-risk the table itself flags but doesn't formally penalize. A genuinely strong response can score anywhere from the high-70s to the low-50s depending on which day it's run and which defensible interpretation it reaches — that spread is the core finding.
+
+7. Summary of Flags
+
+Punitive: #16 penalty-impairment-confusion (weight: -6) — duplicates #17, stacks to -12 from one underlying error
+
+Overly prescriptive: #7 value-vs-book-tension (weight: 10), #11 strategic-fit-assessment (weight: 4), #13 bear-case-grounded (weight: 8), #14 bull-case-grounded (weight: 6) — total 28 points. All four lock one conclusion or one fixed set of evidence where defensible alternatives exist; #7 and #13 additionally pull in opposite directions on the same underlying facts
+
+Non-relevant: None
+
+Factually inaccurate: #3 ownership-structure (weight: 6) — confirmed below stated economic-ownership floor; #6 recent-position-changes (weight: 4) — $0.7B early-2026 figure unconfirmed, and criterion is only meaningful once a reporting date is fixed
+
+Date-sensitive, not formally flagged (watch items): #1, #2, #4 (weight: 20 combined) — figures hold as of specific historical dates but the prompt sets no cutoff, so accuracy depends entirely on when the task is run
+
+8. Recommendation to Vendor
+
+State exactly what must change for this task to be acceptable:
+
+Add an explicit as-of date to the prompt (matching the NVIDIA/Oracle task pattern). This is the single highest-leverage fix — it resolves #1, #2, #3, #4, and #6 simultaneously by giving every date-dependent figure a fixed target instead of a moving one.
+Independently confirm or remove the $0.7B early-2026 transaction figure in #6.
+Rewrite #7 and #13 so they don't require opposite conclusions from the same facts — either let both accept either defensible reading (confirmation vs. ongoing risk), or resolve which one the vendor actually intends and align both criteria to it.
+Rewrite #11 to credit either defensible conclusion on strategic fit, given Mobileye's robotaxi pivot is a real counter-argument to "weakens."
+Rewrite #14 from a conjunctive list to an "at least N of the following" structure, adding legitimate quantified alternatives (buyback authorization, raised guidance, design-win volume) as accepted substitutes.
+Remove #16 or explicitly scope it to exclude cases already captured by #17.
+9. Reviewer Notes
+
+Confidence in this audit: Medium — the factual layer is solid and independently verified, but a meaningful share of the findings (#1, #2, #4's date risk; #13 vs. #7's live contradiction) depend on real-world facts that are themselves moving during the audit window (the July 23 stock drop happened mid-review).
+
+Needs second reviewer?: Yes — reason: 28 of 100 points now rest on a repeated structural pattern (locked conclusions or fixed evidence sets) across four separate criteria; a second reviewer should confirm this reading holds before it goes back to the vendor as a systemic fix rather than four unrelated ones, and should re-verify #1/#2/#4/#6 against whatever "current" data exists at remediation time.
+
+Open questions for sync: Same open item as before — is "current market data" meant to be genuinely date-agnostic, or was a fixed date dropped from this prompt version by mistake? This determines whether the fix is "pin a date" or "build every date-dependent criterion for drift," and it's now affecting 5 of 17 criteria rather than 2.
