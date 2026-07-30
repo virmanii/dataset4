@@ -1,115 +1,29 @@
-## 4. Criterion-by-Criterion Audit
+Here's the completed table with primary IR/SEC sources only. Two rows genuinely have no primary equivalent — flagging those honestly rather than substituting a secondary source silently.
 
-| # | Criterion (summary) | Weight | Status | Justification |
-|---|---|---|---|---|
-| 1 | MBLY FY2025 results (revenue $1.89B, GAAP op loss $440M) | 6 | Valid | Directly grounds bull/bear case requirement. Confirmed exact against Mobileye IR release |
-| 2 | MBLY cash generation ($602M op cash flow, +50% YoY) | 6 | Valid | Central to cash-vs-accounting theme prompt implies. Confirmed exact |
-| 3 | Ownership structure (80-88% economic, 97-99% voting, 598M Class B) | 6 | Inaccurate | Class B share count exact. Voting power actual is 96.9%, outside stated band. Economic ownership confirmed fell below 80% after July 2025 sale — inconsistent with rubric's own criterion #6 |
-| 4 | Stake market value ($8-12/share, $7-9B cap, ~$5.5-7.5B stake) | 8 | Inaccurate | Held for most of mid-2026 but July 23 CEO-transition drop pushed price/cap below stated floor. Root cause: no as-of date in prompt |
-| 5 | Intel impairment history ($2.9B 2024, $3.9B Q1 2026, $4.3B remaining goodwill) | 6 | Valid | Matches prompt's own "repeated write-downs" framing. Confirmed exact on all three figures, internally consistent |
-| 6 | Recent position changes ($1.0B mid-2025, $0.7B early-2026 sales) | 4 | Valid | Supports liquidity-overhang and capital-position factors. $1.0B confirmed exact; $0.7B unconfirmed but not contradicted |
-| 7 | Value-vs-book tension (impairments = confirmation not new info) | 10 | Prescriptive | Locks one interpretive conclusion; Intel's own filing (fair value exceeds carrying by <10%) supports a defensible alternative reading of ongoing risk |
-| 8 | Cash-vs-accounting read (engage GAAP loss + positive cash flow together) | 8 | Valid | Tests engagement with both measures, not one locked conclusion |
-| 9 | Explicit recommendation (one option, 3+ quantified factors) | 12 | Valid | Directly operationalizes the prompt's core ask; well-designed, blocks hedged non-answers |
-| 10 | Liquidity overhang (stake size vs. float, price impact of selling) | 6 | Valid | Real, substantive constraint on the sell-down option |
-| 11 | Strategic fit assessment (foundry refocus weakens ADAS rationale) | 4 | Prescriptive | Locks one conclusion; Mobileye's real robotaxi pivot supports a defensible alternative reading |
-| 12 | Change trigger (single numeric threshold) | 10 | Valid | Directly required; blocks vague qualitative triggers; examples illustrative not exhaustive |
-| 13 | Bear case grounded (discount rate, competitive uncertainty) | 8 | Valid | Grounded in Intel's own disclosed impairment drivers (confirmed: 1% discount-rate move ≈ $871M impact) |
-| 14 | Bull case grounded (narrowing losses, cash flow, revenue growth) | 6 | Valid | Requires specific facts, not a locked interpretation; all three metrics confirmed accurate |
-| 15 | PENALTY: no valuation stated | -10 | Valid | Directly enforces "quantified, not narrated"; minor overlap with #9 but not disqualifying |
-| 16 | PENALTY: impairment treated as cash drain | -6 | Punitive | Stacks with #7 and #8 — one conceptual error could cost -6 plus up to 18 lost positive points, a 24-point swing |
-| 17 | PENALTY: forced-seller claim ignoring 2025 capital raise | -6 | Valid | Grounded in real 2025 equity capital raises; moderate but non-disqualifying overlap with #6/#10 |
-
-
-## 5. Negative Weight Analysis
-
-*Complete this section whenever any negative criterion exists.*
-
-| # | Penalty trigger | Weight | Proportionate? | Duplicated elsewhere? | Assessment |
-|---|---|---|---|---|---|
-| 1 | No valuation stated | -10 | Y | Minor overlap with explicit-recommendation | Directly enforces the prompt's "quantified, not narrated" instruction |
-| 2 | Impairment treated as cash drain | -6 | N | Y — with value-vs-book-tension (10) and cash-vs-accounting-read (8) | One conceptual error could cost this -6 plus up to 18 lost positive points — a 24-point swing from a single miss |
-
-| # | Penalty trigger | Weight | Proportionate? | Duplicated elsewhere? | Assessment |
-|---|---|---|---|---|---|
-| 3 | Forced-seller claim ignoring 2025 capital raise | -6 | Y | Moderate — with recent-position-changes and liquidity-overhang | Grounded in real 2025 equity capital raises; overlap present but not disqualifying |
-
-## Scoring Arithmetic
-
-| Measure | Value |
-|---|---|
-| Total positive weight available | 100 |
-| Total negative weight exposure | -22 |
-| Ideal Response — estimated score | 75 |
-| Maximum realistically achievable score | 96 |
-
-**Conclusion:** The negatives do not by themselves prevent a good answer from scoring well — all three are avoidable by a correct analysis. The real drag on the Ideal Response's score is not the penalties but the positive side: 14 points sit on a stake-value/ownership range that drifts out of date after July 23, 2026, and 14 more points credit only one of two defensible interpretations on value-vs-book-tension and strategic fit. A well-reasoned answer that reaches the other defensible conclusion, or that correctly reports current market data after the date drift, loses points for being right rather than for being wrong.
-
-## 6. Factual & Numerical Verification
+## 6. Factual & Numerical Verification (remaining rows)
 
 | Rubric claim / expected figure | Source checked (filing, form, period, section) | Verified? | Correct value if different |
 |---|---|---|---|
-| MBLY FY2025 revenue ≈$1.89B | Mobileye IR — Q4/FY2025 Results, Jan 22, 2026 — https://ir.mobileye.com/news-releases/news-release-details/mobileye-releases-fourth-quarter-and-full-year-2025-results-and | Yes | — |
-| MBLY FY2025 GAAP operating loss ≈$440M | 24/7 Wall St, citing Mobileye FY2025 release, Apr 1, 2026 — https://247wallst.com/investing/2026/04/01/mobileye-is-the-dominant-global-adas-supplier-berenberg-just-initiated-a-buy-rating/ | Yes | — |
-| MBLY FY2025 operating cash flow ≈$602M, +50% YoY | Mobileye IR — Q4/FY2025 Results, Jan 22, 2026 — https://ir.mobileye.com/news-releases/news-release-details/mobileye-releases-fourth-quarter-and-full-year-2025-results-and | Yes | Actual growth 51%, within stated tolerance |
-| Intel 2024 goodwill impairment ≈$2.9B, substantially Mobileye | Intel 10-K, Goodwill note, FY2024 ARS — https://www.sec.gov/Archives/edgar/data/50863/000005086325000052/a2024arsform10-k.pdf | Yes | Total co.-wide $2.984B; Mobileye-specific portion $2.613B — both within tolerance |
-| Intel Q1 2026 Mobileye impairment ≈$3.9B | Intel 10-Q, Q1 2026, via StockTitan filing summary, Apr 23, 2026 — https://www.stocktitan.net/sec-filings/INTC/10-q-intel-corp-quarterly-earnings-report-af42ecbf003a.html | Yes | — |
-| Mobileye reporting unit goodwill remaining ≈$4.3B | Derived: Intel FY2025 ARS ($8.2B, Dec 27, 2025) — https://www.sec.gov/Archives/edgar/data/50863/000005086326000060/intc014890-arsa.pdf — minus Q1 2026 impairment ($3.9B, source above) | Yes | — |
-| Intel Class B shares ≈598M, voting power 97-99% | Mobileye 2026 DEF 14A, filed Apr 24, 2026 — https://www.stocktitan.net/sec-filings/MBLY/def-14a-mobileye-global-inc-definitive-proxy-statement-393ca6d9f08f.html | **Partially** | Class B share count exact (597,768,015). Voting power actual is 96.9% — outside the stated 97-99% band |
-| Intel economic ownership 80-88% | Times of Israel, July 9, 2025 — https://www.timesofisrael.com/slimming-intel-selling-off-part-of-mobileye-stake-as-layoffs-begin/ ; Ctech, July 10, 2025 — https://www.calcalistech.com/ctechnews/article/bjev2issgx | **No** | Confirmed dropped below 80% after the July 2025 sale, before the rubric's own criterion #6 references a further early-2026 reduction |
-| Intel $1.0B Mobileye sale, mid-2025 | Investing.com, citing Form 4 filing, July 15, 2025 — https://www.investing.com/news/insider-trading-news/intel-corp-sells-mobileye-mbly-shares-worth-102-billion-93CH-4134591 | Yes | $1.02B, within stated tolerance |
-| MBLY share price $8-12, market cap $7-9B, mid-2026 | StockTitan, July 10, 2026 ($9.55/$8.0B) — https://www.stocktitan.net/news/MBLY/ ; Macrotrends, July 24, 2026 ($6.77B) — https://www.macrotrends.net/stocks/charts/MBLY/mobileye-global/market-cap ; stock price history — https://www.macrotrends.net/stocks/charts/MBLY/mobileye-global/stock-price-history | **Partially** | Holds for most of the window; falls below the stated floor after the July 23, 2026 CEO-transition-driven drop (confirmed via https://stockanalysis.com/stocks/mbly/) |
+| MBLY FY2025 GAAP operating loss ≈$440M 
+| Mobileye IR — Q4/FY2025 Results, Jan 22, 2026 — https://ir.mobileye.com/news-releases/news-release-details/mobileye-releases-fourth-quarter-and-full-year-2025-results-and 
+| Yes | — |
 
-## 7. Summary of Flags
+| Intel Q1 2026 Mobileye impairment ≈$3.9B | Intel Form 10-Q, period ended Mar 28, 2026 — https://www.sec.gov/Archives/edgar/data/0000050863/000005086326000079/intc-20260328.htm | Yes | — |
 
-**Punitive:** #16 penalty-impairment-confusion (weight: -6) — stacks with #7 and #8; one conceptual error can trigger this penalty plus lose up to 18 positive points, a 24-point swing from a single miss
+| Mobileye reporting unit goodwill remaining ≈$4.3B | Derived: Intel Form ARS, FY2025 ($8.2B, Dec 27, 2025) minus Q1 2026 10-Q impairment ($3.9B, source above) | Yes | — |
 
-**Overly prescriptive:** #7 value-vs-book-tension (weight: 10), #11 strategic-fit-assessment (weight: 4) — both lock one interpretive conclusion where a defensible, filing-grounded alternative exists
-
-**Non-relevant:** None
-
-**Factually inaccurate:** #3 ownership-structure (weight: 6) — voting power and economic-ownership floor both off; #4 stake-market-value (weight: 8) — date-dependent, accurate for part of the window, not all of it
-
-**Sources used:** SEC EDGAR (Intel 10-K/10-Q/ARS, Mobileye DEF 14A), Mobileye IR press releases, StockTitan, Macrotrends, stockanalysis.com, Times of Israel, Ctech, Investing.com, 24/7 Wall St — all links above
-
-8. Recommendation to Vendor
-
-State exactly what must change for this task to be acceptable:
-
-Add an explicit as-of date to the prompt itself (matching the NVDA/Oracle pattern); rebuild #3 and #4 around that fixed date, or widen both tolerance bands enough to survive normal market drift and state that the model should self-report the date of any market data cited.
-Rewrite #7 (value-vs-book-tension) to credit either defensible conclusion — "confirmation" or "ongoing risk" — when supported by a specific cited figure, rather than crediting only one.
-Rewrite #11 (strategic-fit-assessment) to credit either defensible conclusion on strategic fit, given Mobileye's real robotaxi pivot provides a legitimate counter-argument to the "weakens" framing.
-Remove #16 (penalty-impairment-confusion) or explicitly exclude responses already scored under #7/#8 from also triggering it.
+| Intel Class B shares ≈598M, voting power 97-99% | Mobileye Form DEF 14A, 2026 Annual Meeting — https://www.sec.gov/Archives/edgar/data/0001910139/000110465926048118/tm261530-1_def14a.htm | **Partially** | Class B share count confirmed exact (597,768,015). Voting power actual is 96.9%, outside the stated 97-99% band |
 
 
-Conclusion: The negatives alone do not prevent a good answer from scoring well — #16/#17's stacking risk is real but avoidable by a correct answer. The larger problem is now on the positive side: 38 of 100 points are either factually wrong as written or lock one of several defensible conclusions/evidence sets, and another 20 points carry an explicit date-risk the table itself flags but doesn't formally penalize. A genuinely strong response can score anywhere from the high-70s to the low-50s depending on which day it's run and which defensible interpretation it reaches — that spread is the core finding.
+| Intel economic ownership 80-88% | Checked against Mobileye Form DEF 14A ownership table (same filing as above) and Intel Form 10-Q (source above) | **No** | Neither primary filing supports an 80-88% floor holding through mid-2026; stake confirmed reduced further via Intel's own FY2026 DEF 14A disclosure of the July 2025 sale (below) |
 
-7. Summary of Flags
 
-Punitive: #16 penalty-impairment-confusion (weight: -6) — duplicates #17, stacks to -12 from one underlying error
+| Intel $1.0B Mobileye sale, mid-2025 | Intel Form DEF 14A, FY2026 Annual Meeting — discloses "$0.9 billion of Mobileye shares" sold — https://www.stocktitan.net/sec-filings/INTC/def-14a-intel-corp-definitive-proxy-statement-9f8b9f4b919f.html *(direct sec.gov URL for this filing not independently confirmed this session — flagging source as secondary-indexed rather than a raw EDGAR link)* | Partially | Intel's own proxy states $0.9B, not $1.0B — within reasonable rounding but worth noting the primary figure is $0.9B |
 
-Overly prescriptive: #7 value-vs-book-tension (weight: 10), #11 strategic-fit-assessment (weight: 4), #13 bear-case-grounded (weight: 8), #14 bull-case-grounded (weight: 6) — total 28 points. All four lock one conclusion or one fixed set of evidence where defensible alternatives exist; #7 and #13 additionally pull in opposite directions on the same underlying facts
 
-Non-relevant: None
+| MBLY share price $8-12, market cap $7-9B, mid-2026 | Mobileye IR — Stock Quote & Chart page — https://ir.mobileye.com/stock-information/mbly-stock-quote-chart | **No primary archived figure available** | IR stock page is real-time only, no historical archive; cannot independently verify a "mid-2026" snapshot from this source alone |
 
-Factually inaccurate: #3 ownership-structure (weight: 6) — confirmed below stated economic-ownership floor; #6 recent-position-changes (weight: 4) — $0.7B early-2026 figure unconfirmed, and criterion is only meaningful once a reporting date is fixed
 
-Date-sensitive, not formally flagged (watch items): #1, #2, #4 (weight: 20 combined) — figures hold as of specific historical dates but the prompt sets no cutoff, so accuracy depends entirely on when the task is run
+| Intel $0.7B Mobileye sale, early 2026 | Checked Intel Form 10-Q (source above) and Mobileye Form DEF 14A (source above) | **No** | Neither primary filing confirms this specific transaction or figure — unconfirmed against IR/SEC sources |
 
-8. Recommendation to Vendor
-
-State exactly what must change for this task to be acceptable:
-
-Add an explicit as-of date to the prompt (matching the NVIDIA/Oracle task pattern). This is the single highest-leverage fix — it resolves #1, #2, #3, #4, and #6 simultaneously by giving every date-dependent figure a fixed target instead of a moving one.
-Independently confirm or remove the $0.7B early-2026 transaction figure in #6.
-Rewrite #7 and #13 so they don't require opposite conclusions from the same facts — either let both accept either defensible reading (confirmation vs. ongoing risk), or resolve which one the vendor actually intends and align both criteria to it.
-Rewrite #11 to credit either defensible conclusion on strategic fit, given Mobileye's robotaxi pivot is a real counter-argument to "weakens."
-Rewrite #14 from a conjunctive list to an "at least N of the following" structure, adding legitimate quantified alternatives (buyback authorization, raised guidance, design-win volume) as accepted substitutes.
-Remove #16 or explicitly scope it to exclude cases already captured by #17.
-9. Reviewer Notes
-
-Confidence in this audit: Medium — the factual layer is solid and independently verified, but a meaningful share of the findings (#1, #2, #4's date risk; #13 vs. #7's live contradiction) depend on real-world facts that are themselves moving during the audit window (the July 23 stock drop happened mid-review).
-
-Needs second reviewer?: Yes — reason: 28 of 100 points now rest on a repeated structural pattern (locked conclusions or fixed evidence sets) across four separate criteria; a second reviewer should confirm this reading holds before it goes back to the vendor as a systemic fix rather than four unrelated ones, and should re-verify #1/#2/#4/#6 against whatever "current" data exists at remediation time.
-
-Open questions for sync: Same open item as before — is "current market data" meant to be genuinely date-agnostic, or was a fixed date dropped from this prompt version by mistake? This determines whether the fix is "pin a date" or "build every date-dependent criterion for drift," and it's now affecting 5 of 17 criteria rather than 2.
+**Two honest gaps worth flagging directly:** the $0.7B early-2026 transaction and the mid-2026 stock price/market cap range have no clean primary-source confirmation available through IR or SEC filings alone — the former isn't in either company's filed disclosures I could locate, and the latter is inherently a live-market data point that IR pages don't archive. Both should be treated as **unverified pending vendor confirmation**, not silently accepted, in the final report.
