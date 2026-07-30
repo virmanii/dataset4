@@ -1,8 +1,21 @@
 
-Rubric claim / expected figure	Source checked (filing, form, period, section)	Verified?	Correct value if different
 
-Intel economic ownership 80-88%	No primary filing states a current economic-ownership percentage directly; checked Intel Form 10-Q and Mobileye Form DEF 14A (both above), neither discloses this figure. Credible news: Times of Israel, July 9, 2025 — https://www.timesofisrael.com/slimming-intel-selling-off-part-of-mobileye-stake-as-layoffs-begin/ ; Ctech, July 10, 2025 — https://www.calcalistech.com/ctechnews/article/bjev2issgx	No	Confirmed stake fell below 80% following the July 2025 sale (both sources state this explicitly), before any further early-2026 reduction
+## 4. Criterion-by-Criterion Audit (final, updated)
 
-Intel $1.0B Mobileye sale, mid-2025	Intel FY2026 DEF 14A discloses "$0.9 billion of Mobileye shares" sold (filing referenced above, no independently-confirmed direct sec.gov link this session). Credible news, citing the underlying SEC Form 4: Investing.com, July 15, 2025 — https://www.investing.com/news/insider-trading-news/intel-corp-sells-mobileye-mbly-shares-worth-102-billion-93CH-4134591	Partially	Intel's own proxy states $0.9B; the Form 4-sourced news reports the precise transaction value as $1.02B (63,731,985 shares at $16.0463). Both are defensible depending on whether the figure includes the associated $100M buyback — treat $1.0B as reasonable rounding, not an error
-
-MBLY share price $8-12, market cap $7-9B, mid-2026	No primary IR/SEC source archives historical price data. Credible news/data sources: StockTitan, July 10, 2026 ($9.55/~$8.0B) — https://www.stocktitan.net/news/MBLY/ ; Macrotrends, July 24, 2026 ($6.77B) — https://www.macrotrends.net/stocks/charts/MBLY/mobileye-global/market-cap ; stockanalysis.com, confirming the July 23, 2026 drop to ~$7.33 — https://stockanalysis.com/stocks/mbly/	Partially	Holds for most of the stated window (e.g., July 10 figures fall inside the range); breaks below the stated floor after the July 23, 2026 CEO-transition-driven drop
+| # | Criterion (summary) | Weight | Status | Justification |
+|---|---|---|---|---|
+| 1 | DCP trajectory (47.0→46.2→44.1) | 10 | **Prescriptive** | Locks three specific points, omitting the real Q1/Q2 2025 dip-and-rebound (45.5→44.5) that's part of the actual disclosed record. A model citing the full quarterly series — arguably more complete evidence — isn't credited for it |
+| 2 | Management's IRA/Part D explanation (~4 days) | 8 | Valid | Only one disclosed management explanation exists for this metric — no menu of alternatives to lock out |
+| 3 | Favorable development $140M, characterized as small | 8 | **Prescriptive** | Locks the full-year net figure when real quarterly volatility exists (Q2 unfavorable $70M, Q3 favorable $80M) that a model might reasonably foreground as more relevant to a "through 2025" trend claim |
+| 4 | Premium deficiency/loss-contract reserve $672M vs. $0 | 10 | Valid | Disclosed only once, in the annual 10-K reconciliation — no competing valid alternative figure exists |
+| 5 | Medical costs payable $39.3B vs. $34.2B | 6 | **Prescriptive** | Locks YE-to-YE comparison when quarterly medical costs payable figures are also disclosed in the 10-Qs; weaker case than #1/#3 since this is conventionally a year-end snapshot metric, but flagged for consistency |
+| 6 | Residual-decline quantitative test | 10 | Valid | Tests the analytical operation itself, not a specific evidence set — doesn't independently name which points must be used |
+| 7 | Development-shrinkage interpretation | 8 | **Prescriptive** | Locks one causal story when UNH's own disclosures support a real alternative (claims trend running hot against an unchanged margin) |
+| 8 | PDR concept correctly explained (distinct from IBNR) | 8 | Valid | Tests a fixed accounting definition, not a selection among evidence |
+| 9 | Overall verdict: "PARTIALLY supported" only | 12 | **Prescriptive** | Forecloses two of the three verdict options the prompt itself offers; highest-weighted criterion in the rubric |
+| 10 | Q1 2026 reserve-release tailwind | 8 | Valid | Single disclosed fact, no competing alternative period exists |
+| 11 | Disclosure limitations | 6 | Valid | Genuinely open, multiple accepted examples |
+| 12 | Next-quarter watch item + threshold | 6 | Valid | Verbatim required by the prompt; genuinely open alternatives |
+| 13 | PENALTY: asserts fraud as established fact | -10 | Valid | Not tied to evidence selection; protects against real overclaiming |
+| 14 | PENALTY: dismisses DCP decline wholesale | -8 | Non-relevant | Duplicates #6; removed as redundant |
+| 15 | PENALTY: confuses PDR with IBNR | -6 | Non-relevant | Duplicates #8; removed as redundant |
