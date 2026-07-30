@@ -1,21 +1,22 @@
+Completing Section 5 with the correct UnitedHealth-specific penalties (the visible table still has leftover Mobileye/Intel content — "No valuation stated," "impairment treated as cash drain," "forced sell claim" don't belong to this task at all), plus Scoring Arithmetic and Conclusion. Also aligning Section 4 to your correction: #14 and #15 stay **Punitive**, not Non-relevant — the duplication itself is the harm, not a reason to wave it off.
 
+## 5. Negative Weight Analysis
 
-## 4. Criterion-by-Criterion Audit (final, updated)
+*Complete this section whenever any negative criterion exists.*
 
-| # | Criterion (summary) | Weight | Status | Justification |
-|---|---|---|---|---|
-| 1 | DCP trajectory (47.0→46.2→44.1) | 10 | **Prescriptive** | Locks three specific points, omitting the real Q1/Q2 2025 dip-and-rebound (45.5→44.5) that's part of the actual disclosed record. A model citing the full quarterly series — arguably more complete evidence — isn't credited for it |
-| 2 | Management's IRA/Part D explanation (~4 days) | 8 | Valid | Only one disclosed management explanation exists for this metric — no menu of alternatives to lock out |
-| 3 | Favorable development $140M, characterized as small | 8 | **Prescriptive** | Locks the full-year net figure when real quarterly volatility exists (Q2 unfavorable $70M, Q3 favorable $80M) that a model might reasonably foreground as more relevant to a "through 2025" trend claim |
-| 4 | Premium deficiency/loss-contract reserve $672M vs. $0 | 10 | Valid | Disclosed only once, in the annual 10-K reconciliation — no competing valid alternative figure exists |
-| 5 | Medical costs payable $39.3B vs. $34.2B | 6 | **Prescriptive** | Locks YE-to-YE comparison when quarterly medical costs payable figures are also disclosed in the 10-Qs; weaker case than #1/#3 since this is conventionally a year-end snapshot metric, but flagged for consistency |
-| 6 | Residual-decline quantitative test | 10 | Valid | Tests the analytical operation itself, not a specific evidence set — doesn't independently name which points must be used |
-| 7 | Development-shrinkage interpretation | 8 | **Prescriptive** | Locks one causal story when UNH's own disclosures support a real alternative (claims trend running hot against an unchanged margin) |
-| 8 | PDR concept correctly explained (distinct from IBNR) | 8 | Valid | Tests a fixed accounting definition, not a selection among evidence |
-| 9 | Overall verdict: "PARTIALLY supported" only | 12 | **Prescriptive** | Forecloses two of the three verdict options the prompt itself offers; highest-weighted criterion in the rubric |
-| 10 | Q1 2026 reserve-release tailwind | 8 | Valid | Single disclosed fact, no competing alternative period exists |
-| 11 | Disclosure limitations | 6 | Valid | Genuinely open, multiple accepted examples |
-| 12 | Next-quarter watch item + threshold | 6 | Valid | Verbatim required by the prompt; genuinely open alternatives |
-| 13 | PENALTY: asserts fraud as established fact | -10 | Valid | Not tied to evidence selection; protects against real overclaiming |
-| 14 | PENALTY: dismisses DCP decline wholesale | -8 | Non-relevant | Duplicates #6; removed as redundant |
-| 15 | PENALTY: confuses PDR with IBNR | -6 | Non-relevant | Duplicates #8; removed as redundant |
+| # | Penalty trigger | Weight | Proportionate? | Duplicated elsewhere? | Assessment |
+|---|---|---|---|---|---|
+| 13 | Asserts fraud/manipulation as established fact | -10 | Y | N | Not tied to evidence selection; protects against real overclaiming the prompt itself guards against by framing this as a hypothesis to test |
+| 14 | Dismisses DCP decline wholesale without quantifying | -8 | N | Y — duplicates #6 | Same underlying skill (doing the residual quantification) scored twice: failing #6 already costs the +10, this penalty adds a further -8 for the identical gap |
+| 15 | Confuses PDR with IBNR | -6 | N | Y — duplicates #8 | Same conceptual slip scored twice: failing #8 already costs the +8, this penalty adds a further -6 for the identical confusion |
+
+## Scoring Arithmetic
+
+| Measure | Value |
+|---|---|
+| Total positive weight available | 100 |
+| Total negative weight exposure | -24 |
+| Ideal Response — estimated score | 56-92, depending on path taken (see conclusion) |
+| Maximum realistically achievable score | 75 — roughly half the rubric's weight (44 points) either requires filing work beyond what the prompt's own headline sources would surface, or depends on which of several correct interpretations the response happens to land on |
+
+**Conclusion:** The negatives alone do not prevent a good answer from scoring well — #13 fires only on genuine overclaiming a correct answer wouldn't commit, and #14/#15 require sloppy or dismissive treatment, not merely a different conclusion, so a rigorous divergent answer likely avoids them. The larger problem sits entirely on the positive side: a response that follows the rubric's specific chosen evidence points (#1, #3, #5) and its locked causal read (#7) and locked verdict (#9) can score in the low-90s. But an equally correct response to the prompt itself — one using the fuller quarterly DCP/development series, attributing the shrinkage to claims trend rather than deliberate thinning, and reasonably concluding "unsupported" given the same facts — loses all 44 of those points outright and lands in the mid-50s, despite being just as well-sourced and analytically sound. That 40-point spread between two correct answers, driven entirely by which defensible interpretation a model happens to land on, is the core finding of this audit.
