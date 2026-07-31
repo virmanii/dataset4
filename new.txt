@@ -1,12 +1,9 @@
-Type 2 fixes (numbers/phrasing only — narrow, mechanical):
+Punitive: #14 penalty-dismisses-DCP-decline-wholesale (weight: -8), #15 penalty-confuses-PDR-with-IBNR (weight: -6) — both duplicate a positive criterion already scoring the identical skill (#6 and #8 respectively), so one underlying gap gets scored twice
 
-#1: Accept any correctly-cited subset of the 2025 quarterly DCP series showing the YE2024→YE2025 decline, not only the three named points.
-#3: Accept the quarterly favorable/unfavorable breakdown as equivalent to the net annual figure, provided it nets to the same ~$140M conclusion.
+Overly prescriptive: #1 dcp-trend (weight: 10), #3 favorable-development (weight: 8), #5 medical-costs-payable (weight: 6), #7 development-shrinkage-read (weight: 8), #9 overall-verdict (weight: 12) — total 44 points. All five lock either one specific evidence subset or one specific conclusion where an equally correct answer to the prompt exists but wouldn't satisfy the criterion as written
 
-Type 1 fixes (structural — the criterion needs to be rebuilt around the judgment, not the approach):
+Non-relevant: None
 
-#5: Remove as an independently scored criterion; fold into #1 as unscored supporting context, since a correct answer isn't obligated to use raw-dollar reserve figures at all.
-#7: Rebuild to test whether the response correctly identifies that thin favorable development signals a reduced margin for error, and leave the causal attribution (deliberate thinning vs. trend surprise) ungraded — mirroring #6's already-correct attribution-neutral design.
-#9: Rebuild to test the process (residual quantified, offsetting effects weighed, threshold stated) rather than the output, and credit whichever of the three verdicts that process defensibly supports.
+Factually inaccurate: None — every figure checked (DCP series, IRA attribution, $140M development, $672M PDR, $39.3B/$34.2B medical costs payable, Q1 2026 reserve release) confirmed exact against UnitedHealth's own primary filings
 
-#14, #15: Remove — duplicate #6 and #8, no independent content.
+Date-sensitivity: Not applicable — this prompt names a fixed, closed evidence set (FY2025 10-K, 2025 and Q1 2026 materials), unlike the Mobileye task; no drift risk found here
