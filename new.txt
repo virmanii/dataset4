@@ -1,9 +1,12 @@
-Punitive: #14 penalty-dismisses-DCP-decline-wholesale (weight: -8), #15 penalty-confuses-PDR-with-IBNR (weight: -6) — both duplicate a positive criterion already scoring the identical skill (#6 and #8 respectively), so one underlying gap gets scored twice
 
-Overly prescriptive: #1 dcp-trend (weight: 10), #3 favorable-development (weight: 8), #5 medical-costs-payable (weight: 6), #7 development-shrinkage-read (weight: 8), #9 overall-verdict (weight: 12) — total 44 points. All five lock either one specific evidence subset or one specific conclusion where an equally correct answer to the prompt exists but wouldn't satisfy the criterion as written
 
-Non-relevant: None
+## 6. Factual & Numerical Verification (corrected — rubric claims only)
 
-Factually inaccurate: None — every figure checked (DCP series, IRA attribution, $140M development, $672M PDR, $39.3B/$34.2B medical costs payable, Q1 2026 reserve release) confirmed exact against UnitedHealth's own primary filings
-
-Date-sensitivity: Not applicable — this prompt names a fixed, closed evidence set (FY2025 10-K, 2025 and Q1 2026 materials), unlike the Mobileye task; no drift risk found here
+| Rubric claim / expected figure | Source checked (filing, form, period, section) | Verified? | Correct value if different |
+|---|---|---|---|
+| DCP trajectory: 47.0 (YE2024), 46.2 (Q3 2025), 44.1 (YE2025) | UnitedHealth Group — Q4/FY2025 Earnings Release, Jan 27, 2026 — https://www.unitedhealthgroup.com/content/dam/UHG/PDF/investors/2025/unh-reports-2025-results-and-issues-2026-outlook.pdf | Yes | — |
+| Management's IRA/Part D explanation (~4 days YoY DCP decline) | Same IR release as above | Yes | — |
+| Favorable medical reserve development ≈$140M, full-year 2025 | Same IR release as above | Yes | — |
+| Premium deficiency and loss-contract reserves ≈$672M (2025) vs. $0 (2024) | UnitedHealth Group Form 10-K, FY2025 (period ended Dec 31, 2025), Note 7 — Medical Costs Payable — https://www.sec.gov/Archives/edgar/data/731766/000073176626000062/unh-20251231.htm | Yes | Confirmed exact, not a rounded approximation |
+| Medical costs payable ≈$39.3B (YE2025) vs. ≈$34.2B (YE2024) | Same 10-K, Note 7 (same URL as above) | Yes | Confirmed exact — $39,337M and $34,224M |
+| Q1 2026 medical-care-ratio improvement benefited partly from releasing Q4 2025 loss-contract reserve (qualitative mechanism claim, no rubric-stated figure) | UnitedHealth Group Form 10-Q, Q1 2026, MD&A — https://www.sec.gov/Archives/edgar/data/0000731766/000073176626000121/uhgearningsreleaseq12026.htm | Yes | — |
